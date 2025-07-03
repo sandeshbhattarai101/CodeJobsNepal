@@ -57,7 +57,7 @@ col1, col2 = st.columns([7, 1])
 
 with col1:
     st.markdown(
-        "<img src='https://raw.githubusercontent.com/sandeshbhattarai101/CodeJobsNepal/main/codejobslogo.png' style='height: 7em;'>",
+        "<img src='https://raw.githubusercontent.com/sandeshbhattarai101/CodeJobsNepal/main/codejobslogo.png' style='height: 6em;'>",
         unsafe_allow_html=True
     )
 with col2:
