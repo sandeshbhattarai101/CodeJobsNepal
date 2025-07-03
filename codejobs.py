@@ -9,6 +9,22 @@ codejobs = pickle.load(open('codejobs.pkl', 'rb'))
 st.set_page_config(layout="wide")
 st.set_page_config(page_title="Code Jobs Nepal")
 
+# Set layout
+st.set_page_config(layout="wide")
+st.set_page_config(page_title="Code Jobs Nepal")
+
+# Inject Open Graph meta tags for LinkedIn and social previews
+st.markdown(
+    """
+    <meta property="og:title" content="Code Jobs Nepal" />
+    <meta property="og:description" content="Explore and search for coding jobs in Nepal." />
+    <meta property="og:image" content="./codejobslogo.png" />
+    <meta property="og:url" content="https://codejobsnepal.streamlit.app" />
+    """,
+    unsafe_allow_html=True
+)
+
+
 # Session state setup
 if 'selected_card_job' not in st.session_state:
     st.session_state.selected_card_job = None
@@ -40,7 +56,7 @@ st.markdown(
 col1, col2 = st.columns([7, 1])
 
 with col1:
-    st.markdown("<h1 style='margin-bottom: 0;'>Code Jobs Nepal</h1>", unsafe_allow_html=True)
+st.markdown("<img src='https://github.com/sandeshbhattarai101/CodeJobsNepal/blob/main/codejobslogo.png' style='margin-bottom: 0;'>", unsafe_allow_html=True)
 
 with col2:
     # Add spacing to vertically align with the title
