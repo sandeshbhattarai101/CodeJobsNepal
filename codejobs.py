@@ -56,12 +56,14 @@ st.markdown(
 col1, col2 = st.columns([7, 1])
 
 with col1:
-st.markdown("<img src='https://github.com/sandeshbhattarai101/CodeJobsNepal/blob/main/codejobslogo.png' style='margin-bottom: 0;'>", unsafe_allow_html=True)
-
+    st.markdown(
+        "<img src='https://raw.githubusercontent.com/sandeshbhattarai101/CodeJobsNepal/main/codejobslogo.png' style='height: 2.2em;'>",
+        unsafe_allow_html=True
+    )
 with col2:
-    # Add spacing to vertically align with the title
     st.markdown("<div style='height: 1.8em;'></div>", unsafe_allow_html=True)
     about_clicked = st.button("About Us", key="about_btn")
+
 
 if about_clicked:
     st.session_state.show_about = True
