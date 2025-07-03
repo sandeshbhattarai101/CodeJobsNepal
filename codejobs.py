@@ -57,11 +57,11 @@ col1, col2 = st.columns([7, 1])
 
 with col1:
     st.markdown(
-        "<img src='https://raw.githubusercontent.com/sandeshbhattarai101/CodeJobsNepal/main/codejobslogo.png' style='height: 2.2em;'>",
+        "<img src='https://raw.githubusercontent.com/sandeshbhattarai101/CodeJobsNepal/main/codejobslogo.png' style='height: 5em;'>",
         unsafe_allow_html=True
     )
 with col2:
-    st.markdown("<div style='height: 1.8em;'></div>", unsafe_allow_html=True)
+    st.markdown("<div style='height:1.5em; object-fit: fill'></div>", unsafe_allow_html=True)
     about_clicked = st.button("About Us", key="about_btn")
 
 
