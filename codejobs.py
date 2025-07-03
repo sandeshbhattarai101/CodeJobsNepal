@@ -122,7 +122,7 @@ if st.session_state.search_triggered:
                     f"""
                     <div class="job-card">
                         <img src="{row.get('Company Image', '')}" alt="Company Logo" style="width: 100px; height: auto; margin-bottom: 10px;">
-                        <h4 style="margin-bottom: 10px;">{row['Job Title']} at {row.get('Company Name', 'Unknown')}</h4>
+                        <h4 style="margin-bottom: 10px;">{row['Job Title']} at {row.get(row['Company Name'], 'Unknown')}</h4>
                         <p><strong>Company:</strong> {row.get('Company Name', 'N/A')}</p>
                         <p><strong>Job Category:</strong> {row.get('Job Category', 'N/A')}</p>
                         <p><strong>Level:</strong> {row.get('Job Level', 'N/A')}</p>
@@ -167,7 +167,7 @@ if st.session_state.selected_card_job:
                 margin-bottom: 20px;
             ">
                 <img src="{row.get('Company Image', '')}" alt="Company Logo" style="width: 100px; height: auto; margin-bottom: 10px;">
-                <h4 style="margin-bottom: 10px;">{row['Job Title']} at {row.get('Company Name', 'Unknown')}</h4>
+                <h4 style="margin-bottom: 10px;">{row['Job Title']} at {row.get(row['Company Name'], 'Unknown')}</h4>
                 <p><strong>Company:</strong> {row.get('Company Name', 'N/A')}</p>
                 <p><strong>Job Category:</strong> {row.get('Job Category', 'N/A')}</p>
                 <p><strong>Level:</strong> {row.get('Job Level', 'N/A')}</p>
