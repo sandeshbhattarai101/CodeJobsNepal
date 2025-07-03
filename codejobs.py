@@ -13,17 +13,6 @@ st.set_page_config(page_title="Code Jobs Nepal")
 st.set_page_config(layout="wide")
 st.set_page_config(page_title="Code Jobs Nepal")
 
-# Inject Open Graph meta tags for LinkedIn and social previews
-st.markdown(
-    """
-    <meta property="og:title" content="Code Jobs Nepal" />
-    <meta property="og:description" content="Explore and search for coding jobs in Nepal." />
-    <meta property="og:image" content="./codejobslogo.png" />
-    <meta property="og:url" content="https://codejobsnepal.streamlit.app" />
-    """,
-    unsafe_allow_html=True
-)
-
 
 # Session state setup
 if 'selected_card_job' not in st.session_state:
@@ -217,7 +206,7 @@ else:
                 ">
                     <img src="{row.get('Company Image', '')}" style="width:80px;height:auto;margin-bottom:10px;" />
                     <h5 style="margin-bottom:5px;">{row['Job Title']}</h5>
-                    <p style="color:gray;margin-bottom:0;">{row.get('Company Name', 'N/A')}</p>
+                    <p style="color:#383838;margin-bottom:0;">{row.get('Company Name', 'N/A')}</p>
                 </div>
             </a>
             """
